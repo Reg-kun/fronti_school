@@ -30,7 +30,10 @@ const LoginPage = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/login/", form);
+      const res = await axios.post(
+        "https://school-dare-1.onrender.com/api/login/",
+        form,
+      );
 
       // сохраняем токены
       localStorage.setItem("access_token", res.data.access_token);
