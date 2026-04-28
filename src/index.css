@@ -1,0 +1,373 @@
+/* App.css */
+
+/* Общий контейнер */
+div {
+  font-family: "Inter", sans-serif;
+}
+
+/* Заголовок */
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+}
+
+/* Сетка карточек */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Карточка */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  border: 1px solid #f1f1f1;
+}
+
+/* Hover эффект */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки карточек */
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Текст */
+.card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Цветовые акценты */
+.card:nth-child(1) {
+  border-left: 5px solid #4caf50;
+}
+
+.card:nth-child(2) {
+  border-left: 5px solid #2196f3;
+}
+
+.card:nth-child(3) {
+  border-left: 5px solid #ff9800;
+}
+
+.card:nth-child(4) {
+  border-left: 5px solid #9c27b0;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+/* Контейнер navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Заголовок */
+.navbar h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Кнопка выхода */
+.navbar button {
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+/* Hover эффект */
+.navbar button:hover {
+  background: #e53935;
+  transform: translateY(-1px);
+}
+
+/* Нажатие */
+.navbar button:active {
+  transform: scale(0.97);
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar h3 {
+    font-size: 16px;
+  }
+
+  .navbar button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  margin-bottom: 15px;
+  color: #273da4;
+}
+
+.lesson-list {
+  display: grid;
+  gap: 10px;
+}
+
+.lesson-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-subject {
+  margin: 0;
+  font-size: 16px;
+}
+
+.lesson-text {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.lesson-right {
+  text-align: right;
+}
+
+.lesson-time {
+  font-weight: bold;
+  margin: 0;
+}
+
+.lesson-class {
+  color: #ff6900;
+  margin: 0;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+}
+
+.attendance-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.attendance-table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+}
+
+.attendance-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.attendance-table tr:hover {
+  background-color: #e6f0ff;
+  transition: 0.3s;
+}
+
+/* Status styles */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.present {
+  background-color: #d4edda;
+  color: #2e7d32;
+}
+
+.absent {
+  background-color: #f8d7da;
+  color: #c62828;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar button {
+  background: #fff;
+  color: #3b82f6;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.navbar button:hover {
+  background: #e0e7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.navbar button:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+
+.register-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* карточка */
+.register-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* заголовок */
+.register-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* inputs */
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.register-card input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* кнопка */
+.register-card button {
+  width: 100%;
+  padding: 12px;
+
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-card button:hover {
+  background: #5a67d8;
+}
+
+/* адаптив */
+@media (max-width: 400px) {
+  .register-card {
+    width: 90%;
+    padding: 25px;
+  }
+}
