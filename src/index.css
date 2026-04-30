@@ -328,3 +328,34 @@ h1 {
     padding: 25px;
   }
 }
+.attendance-container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+
+.attendance-card {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status.present {
+  color: green;
+}
+
+.status.absent {
+  color: red;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}

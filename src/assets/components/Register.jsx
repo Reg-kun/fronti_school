@@ -22,7 +22,7 @@ const Register = ({ register, studentClass, setstudentClass }) => {
 
     console.log(res);
 
-    if (res?.access_token) {
+    if (res?.access) {
       navigate("/");
     }
 

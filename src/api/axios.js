@@ -37,7 +37,7 @@ API.interceptors.response.use(
         );
 
         // ❗ поддержка разных форматов ответа
-        const newAccess = response.data.access || response.data.access_token;
+        const newAccess = response.data.access || response.data.access;
 
         // ❗ проверка
         if (!newAccess) {

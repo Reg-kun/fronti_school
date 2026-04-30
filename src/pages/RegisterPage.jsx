@@ -15,8 +15,8 @@ const Registerpage = ({ studentClass, setstudentClass }) => {
     const body = await res.json();
     // setMessage(body.message);
 
-    localStorage.setItem("access_token", body.access_token);
-    localStorage.setItem("refresh_token", body.refresh_token);
+    localStorage.setItem("access_token", body.access);
+    localStorage.setItem("refresh_token", body.refresh);
     return body;
   }
 
