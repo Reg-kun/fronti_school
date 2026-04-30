@@ -10,6 +10,7 @@ import GradesPage from "./pages/GradesPage";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import MainLayout from "./Layout/MainLayout";
 import API from "./api/axios";
+import AttendancePage from "./pages/Attendancepage";
 
 const App = () => {
   const [data, setData] = useState({});
