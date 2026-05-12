@@ -22,14 +22,10 @@ const Registerpage = ({ studentClass, setstudentClass }) => {
   }
 
   return (
-    <div>
-      <Register
-        register={register}
-        studentClass={studentClass}
-        setstudentClass={setstudentClass}
-      />
-    </div>
-  );
+  <div>
+    Register Page
+  </div>
+);
 };
 
 export default Registerpage;
