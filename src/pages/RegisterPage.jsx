@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Register from "../components/RegisterPage";
+import { useNavigate } from "react-router-dom";
+import Register from "../components/Register";
 
 const Registerpage = ({ studentClass, setstudentClass }) => {
   // const [message, setMessage] = useState("");
