@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import Register from "../components/Register";
+import Register from "src/components/Register";
 
 const Registerpage = ({ studentClass, setstudentClass }) => {
   // const [message, setMessage] = useState("");
@@ -21,11 +21,6 @@ const Registerpage = ({ studentClass, setstudentClass }) => {
     return body;
   }
 
-  return (
-  <div>
-    Register Page
-  </div>
-);
-};
+return ( <div> <Register register={register} studentClass={studentClass} setstudentClass={setstudentClass} /> </div> ); };
 
 export default Registerpage;
