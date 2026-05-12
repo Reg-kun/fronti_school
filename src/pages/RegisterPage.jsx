@@ -23,4 +23,4 @@ const Registerpage = ({ studentClass, setstudentClass }) => {
 
 return ( <div> <Register register={register} studentClass={studentClass} setstudentClass={setstudentClass} /> </div> ); };
 
-export default Registerpage;
+export default Register;
