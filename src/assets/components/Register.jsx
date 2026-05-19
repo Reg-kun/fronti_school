@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Register from "../../pages/RegisterPage";
 
 const Register = ({ register, studentClass, setstudentClass }) => {
   const [username, setUsername] = useState();
